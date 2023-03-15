@@ -219,9 +219,13 @@ h1 {
     padding: 20px;
 }
 
-.navbar-menu li a:hover {
-    background-color: #25227e;
-    color: #fff
+.navbar-menu li:hover {
+    background-color: #eeeeeeff;
+}
+
+.navbar-menu li a {
+    color: #3e3e3eff;
+    text-decoration:none;
 }
 
 .navbar-menu ul {
@@ -235,11 +239,18 @@ h1 {
     border: none;
 }
 
+.navbar-menu li.active a{
+    color: #fff;
+    background: #25227e;
+    border: none;
+}
+
 .content-container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .content-container .section-title
 {
@@ -253,9 +264,16 @@ h1 {
 }
 
 .content-container .content {
-
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.content-container .content-slim {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .block-section-container {

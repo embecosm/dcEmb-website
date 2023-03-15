@@ -17,13 +17,13 @@
     </div> <!--navbar-header-->
     <div class="navbar-menu">
       <ul>
-        <li a href="https://www.embecosm.com"> Embecosm</a></li>
+        <li><a href="https://www.embecosm.com"> Embecosm</a></li>
         
           
         
           
             
-              <li class="active" a href="/">Home</a></li>
+              <li class="active"><a href="/">Home</a></li>
             
           
         
@@ -66,9 +66,9 @@ notably in time series data.</p>
       <div class="split-3-container">
         <div class="split-content">
           
-<p><img src="assets/images/icon1.jpg" alt="icon1" /></p>
-<h3 id="explain-solutions"><a href="#explainability">Explain Solutions</a></h3>
-<p>dcEmb evaluates solutions in an intrinsicly explainable way that accounts for
+<p><img src="assets/images/icon1.png" alt="icon1" /></p>
+<h3 id="explain-solutions"><a href="#explain-solutions">Explain Solutions</a></h3>
+<p>dcEmb evaluates solutions in an intrinsically explainable way that accounts for
 how every part of an outcome is related to every other part.
 
         </div>
@@ -76,8 +76,8 @@ how every part of an outcome is related to every other part.
       <div class="split-3-container">
         <div class="split-content">
           
-<img src="assets/images/icon2.jpg" alt="icon2" /></p>
-<h3 id="explore-outcomes"><a href="#exploration">Explore Outcomes</a></h3>
+<img src="assets/images/icon2.png" alt="icon2" /></p>
+<h3 id="explore-outcomes"><a href="#explore-outcomes">Explore Outcomes</a></h3>
 <p>dcEmb calculates not just a single, best, solution but the relative likelihood
 of all solutions.
 
@@ -86,8 +86,8 @@ of all solutions.
       <div class="split-3-container">
         <div class="split-content">
           
-<img src="assets/images/icon3.jpg" alt="icon3" /></p>
-<h3 id="encode-knowledge"><a href="#evidence">Encode Knowledge</a></h3>
+<img src="assets/images/icon3.png" alt="icon3" /></p>
+<h3 id="encode-knowledge"><a href="#encode-knowledge">Encode Knowledge</a></h3>
 <p>dcEmb provides a systematic way of pre-encoding knowledge into models,
 preventing it from having to learn complicated or nuanced datasets fully
 from scratch.</p>
@@ -96,91 +96,149 @@ from scratch.</p>
         </div>
       </div>
     </div>
-    <div class="content">
+    <div class="content-slim">
       
 <h2 id="explain-solutions-1">Explain Solutions</h2>
 <p>dcEmb is highly focused on explainability, especially in the challenging domain
 of time series analysis.</p>
 
 <h3 id="what-is-explainability">What is Explainability?</h3>
-<p>Explainability in AI refers to the ability to understand and interpret the 
-decisions and predictions made by artificial intelligence systems. It involves
-providing insights into how AI models work and the factors that influence their
-output. Explainability is crucial for building trust in AI systems and ensuring
+<p>Explainability in AI is ability of an AI to provide human interpretable accounts
+of the decisions and predictions that an AI system makes. Explainability is
+crucial for building trust and transparency in AI systems, and ensuring that
 they make fair and unbiased decisions. It also allows developers and users to
 identify and correct errors or biases in the models.</p>
 
-<h3 id="case-study-amazon">Case Study: Amazon</h3>
-<p>In 2018, Amazon was developing an artificial intelligence system to help
-automate the hiring process for job openings in their company. The goal was to
-create a system that could efficiently filter through the thousands of job
-applications they received and identify the most promising candidates for
-further review by recruiters.</p>
+<h3 id="case-study-amazon-automated-hiring">Case Study: Amazon Automated Hiring</h3>
+<p>Explainability is very important, even for the biggest tech companies in the
+world. In 2018, Amazon suffered a public failure of an artificial intelligence
+system intended to help automate the hiring process for job openings in their
+company. This failure could have been mitigated with an explainable AI system.</p>
 
-<p>The AI was designed to scan resumes and evaluate applicants based on
-qualificatio ns, skills, and experience. It was trained on a dataset of resumes
-submitted to Amazon over a 10-year period, which contained information on
-candidates’ educational backgrounds, work history, and other relevant factors.</p>
+<p>The AI was designed to rank resumes and evaluate applicants on a scale of 1 - 5
+based on their qualifications, skills, and experience. It was trained on 10
+years of resumes submitted to Amazon, and contained information on educational
+backgrounds, work history, and many other factors.</p>
 
-<p>However, the project ran into trouble when the team realized that the system was
-biased against female candidates. The AI was found to favor male applicants and
-downgrade resumes that contained keywords associated with women, such as
-“women’s” or “female.” It was also less likely to recommend female candidates
-for technical roles, which are typically male-dominated.</p>
+<p>Despite the potential benefits such a system might have offered Amazon, it
+quickly became clear that the realization of the system was problematic. It
+exhibited a range of biases, most prominently strong biases against female
+candidates, especially those applying for male-dominated tech roles.</p>
 
-<p>The issue stemmed from the fact that the training dataset was heavily skewed
-towards male applicants, reflecting the gender imbalance in the tech industry.
-As a result, the AI learned to associate male applicants with the traits and
-qualifications that were most commonly found in the dataset, while downgrading
-resumes containing keywords associated with women.</p>
+<p>The issue stemmed from the training dataset - Amazon’s hiring processes seemed
+to (like many others in the tech industry) heavily skew toward male applicants.
+Furthermore, it wasn’t enough to just remove indirect references to gender. When
+direct references to gender were removed, the AI simply found indirect
+references instead.</p>
 
-<p>The flawed system was eventually scrapped, and Amazon’s HR department continued
-to use human recruiters to screen job applications. The incident highlighted the
-risks of using AI for hiring decisions and the importance of ensuring fairness
-and transparency in AI systems. It also prompted calls for more diversity and
-inclusivity in the tech industry, both in terms of hiring practices and the
-development of AI systems.</p>
+<p>Ultimately, even with all the resources at Amazon’s disposal, the flawed system
+was eventually scrapped, and Amazon’s HR department continued to use human
+recruiters to screen job applications. The incident highlighted the risks of
+using AI for decisions like these, and the need for fairness and transparency in
+AI systems (and hiring processes).</p>
 
-<h3 id="dcemb-and-explainability">dcEmb and Explainability</h3>
-<p>how dcemb does explainability</p>
+<p>With a transparent and explainable system like dcEmb, problematic biases can be
+traced back to their source, and alternatives put in place. Even further, models
+created by dcEmb can be modified and interrogated to provide and evaluate “what
+if” scenarios.</p>
 
-<h2 id="explore-solutions">Explore Solutions</h2>
+<h2 id="explore-outcomes-1">Explore Outcomes</h2>
 <p>dcEmb calculates not just an individual “best” solution, but the relative
-likelihood of all solutions.</p>
+likelihood of all outcomes.</p>
 
-<h2 id="what-is-uncertainty-in-ai">What is uncertainty in AI?</h2>
-<p>Uncertainty quantification is a crucial concept in artificial intelligence (AI)
-that measures the level of confidence or uncertainty associated with AI models
-and their predictions. This helps identify and address sources of bias or error
-that can arise from incomplete or noisy data and ensure accurate and reliable AI
-applications. Additionally, understanding the level of uncertainty allows for
-transparency and trust in AI systems, providing users with more information
-about how the models work and the factors that influence their output.</p>
+<h3 id="what-is-evaluating-all-outcomes">What is Evaluating “All” Outcomes?</h3>
+<p>Almost all AI algorithms provide a single, fixed solutions to problems posed to
+them. However, in many real world situations, it’s important to understand
+uncertainty and variability surrounding a proposed solution to understand the
+risks and rewards of different outcomes. Algorithms that do this, like dcEmb,
+achieve this by calculating a “probability distribution” of outcomes,
+effectively calculating all possible solutions at once and their relative
+likelihoods.</p>
 
-<p>Furthermore, uncertainty quantification is essential for safety-critical
-applications, such as autonomous vehicles or medical diagnosis systems, where
-incorrect predictions can have serious consequences. By providing insights into
-the sources of uncertainty and potential errors, uncertainty quantification
-helps to ensure that appropriate safeguards are in place to address potential
-inaccuracies. In summary, uncertainty quantification plays a vital role in the
-accuracy, transparency, and safety of AI applications, making it an essential
-concept for the development of trustworthy and reliable AI systems.</p>
+<h3 id="case-study-autonomous-vehicles">Case Study: Autonomous Vehicles</h3>
+<p>Evaluating all possible solutions is particularly important in situations in
+which real time, safety critical decisions must be made. One prominent example
+of this are autonomous vehicles, which have suffered several high profile
+incidents resulting in deaths over recent years.</p>
+
+<p>Between 2018 and 2019, there were at least 3 notable incidents. In March 2018,
+an Uber autonomous vehicle struck and killed a pedestrian in Tempe, Arizona. In
+May 2018, a Tesla Model X crashed while on Autopilot mode, resulting in the
+death of the driver. In March 2019, a Tesla Model 3 also crashed while on
+Autopilot mode, resulting in the death of the driver.</p>
+
+<p>While the specifics of individual incidents vary, a unifying theme of these
+incidents is misidentification of stimuli by the vehicles - mistaken perception.
+This has been a long identified problem with these systems. Teams at Mcafee
+(2015), Microsoft and The University of Michigan (2020), and Georgia Tech and
+UNC Chapel Hill (2021) have all identified adversarial attacks on autonomous
+vehicles that allow an attackers to cause Vehicles to mispercieve items in it’s
+visual field. For example, to misclassify a stop sign as a speed limit, or to
+force a lane change with a small piece of black tape.</p>
+
+<p>Despite the best efforts of the automotive industry to counteract these
+problems, they remain in no small part due to the limitations of the neural
+networks that these systems employ for perception. These networks struggle to
+evaluate stimuli significantly different to those they have been trained on,
+with sufficiently novel stimuli causing erratic and unpredictable behavior.
+These systems can’t fully express uncertainty.</p>
+
+<p>With technology like dcEmb that evaluates the relatively likelihood of all
+solutions, you get a picture that captures the uncertainty and complexity
+inherent to real world problems that allows nuanced and detailed decision
+making.</p>
 
 <h2 id="encode-knowledge-1">Encode Knowledge</h2>
+<p>dcEmb can pre-encode knowledge of problems into models, to prevent them from
+having to learn a solution from scratch.</p>
 
-<p>Being able to encode prior knowledge into AI systems is essential for developing
-intelligent systems that can learn efficiently and make accurate predictions.
-Prior knowledge, such as expert knowledge or domain-specific information,
-provides valuable insights that can help guide learning and decision-making in
-AI systems. By incorporating prior knowledge, AI systems can make more accurate
-predictions and reduce the amount of data required for training.</p>
+<h3 id="what-is-knowledge-encoding">What is Knowledge Encoding</h3>
+<p>Prior knowledge encoding in AI refers to incorporating domain-specific
+information or expert knowledge into an AI system to help guide its
+decision-making and improve accuracy. It is important because it can lead to
+more efficient learning, reduce the amount of data required for training, and
+improve the transparency and interpretability of AI systems, ultimately building
+trust and confidence in their predictions and decisions.</p>
 
-<p>Furthermore, encoding prior knowledge into AI systems can help to improve their
-transparency and interpretability. By explicitly incorporating prior knowledge,
-it is possible to explain the reasoning behind an AI system’s predictions and
-provide insights into the factors that influence its decision-making. This can
-help to build trust and confidence in AI systems, especially in applications
-where the stakes are high, such as healthcare or finance.</p>
+<h3 id="case-study-learning-to-play-games">Case Study: Learning to Play Games</h3>
+<p>The ability to encode prior knowledge is especially useful when training data is
+limited. In the original application area of Dynamic Causal Modeling,
+neuroimaging, it’s desirable to use as much prior information as possible due to
+the expense and ethical challenges of collecting more data. However, the
+benefits of prior knowledge encoding are more ubiqutious that than this. Most
+recently, the importance of prior knowledge encoding was demonstrated with Large
+Language Models.</p>
+
+<p>In 2013, DeepMind published research on an AI that learned to play Atari games
+from raw pixel inputs. The technology that drove this was called deep
+reinforcement learning, and represented, at the time, a huge leap forward in the
+capability of AI systems to ingest and reason about image data.</p>
+
+<p>One of the selling points of the original DeepMind system was that it has
+learned how to play these games entirely from scratch, just by observing the
+pixels on the screen. This took some cumulative 50 million frames of training
+data and an enormous amount of computing power, quantities that, as far as
+possible, we’d like to reduce.</p>
+
+<p>One of the other advances in the last 10 years that has been very formative in
+the field of AI are Large Language Models. These models are trained on huge
+corpuses of natural language text and, over the last few years especially, have
+achieved outstanding feats of natural language processing.</p>
+
+<p>Recent research (2023) demonstrated that, by integrating a large language model
+into the deep reinforcement learning system and providing it with the
+instructions for the original Atari games in question, training could be sped up
+almost 6000 fold.</p>
+
+<p>To give an idea of how valuable this could be, one of the recent Large Language
+Models, GPT-3, has been cited as producing almost 200,000 kg of CO2 to train. A
+similar gain in efficiently realized here would represent a large, tangible
+benefit, both economically and environmentally.</p>
+
+<p>dcEmb provides a coherent and complete system for accounting for any and all
+pre-existing knowledge that you would want to encode into your models. This
+allows you to get the best possible solution to your problem with the smallest
+amount of training data.</p>
 
     </div>
   </div>
