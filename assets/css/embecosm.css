@@ -1,0 +1,297 @@
+@import "https://fonts.googleapis.com/css?family=Muli:400,400i,700";
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+    font-family: Muli, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-weight: normal;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #3e3e3e;
+}
+
+.h1,
+.h2,
+h1,
+h2 {
+    margin-bottom: 32px
+}
+
+.content-info nav ul li:first-child a,
+.h3,
+.h4,
+.h5,
+.h6,
+.section-header h2,
+.social-sharing h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 16px
+}
+
+.h1,
+h1 {
+    font-size: 32px;
+    letter-spacing: .3px
+}
+
+@media (min-width:768px) {
+
+    .h1,
+    h1 {
+        font-size: 42px;
+        letter-spacing: 1px
+    }
+}
+
+.h2,
+h2 {
+    font-size: 26px
+}
+
+@media (min-width:768px) {
+
+    .h2,
+    h2 {
+        font-size: 32px;
+        letter-spacing: .3px
+    }
+}
+
+.content-info nav ul li:first-child a,
+.h3,
+.section-header h2,
+h3 {
+    font-size: 20px
+}
+
+@media (min-width:768px) {
+
+    .content-info nav ul li:first-child a,
+    .h3,
+    .section-header h2,
+    h3 {
+        font-size: 26px
+    }
+}
+
+.h4,
+.social-sharing h2,
+h4 {
+    font-size: 18px
+}
+
+@media (min-width:768px) {
+
+    .h4,
+    .social-sharing h2,
+    h4 {
+        font-size: 20px
+    }
+}
+
+.h5,
+h5 {
+    font-size: 16px
+}
+
+.h6,
+h6 {
+    font-size: 14px
+}
+
+p {
+    margin: 0 0 25.6px
+}
+
+.lead {
+    margin-bottom: 25.6px;
+    font-size: 20px;
+    line-height: 1.5
+}
+
+.banner-default {
+    color: #ffffff;
+    background-color: #007bc4;
+    background-image: linear-gradient(90deg, #25227e 0, #007bc4 50%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF25227E", endColorstr="#FF007BC4", GradientType=1);
+    width: 100%;
+    display: inline-block;
+}
+
+.banner-default .h1,
+h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+.banner-default .entry-subtitle {
+    font-size: 80%;
+    margin-top: 16px;
+    display: block;
+}
+
+.banner-default .entry-title {
+    float: left;
+    padding-left: 8.33333333%
+}
+
+
+.banner-default .banner-img {
+    max-height: 300px;
+    float: right;
+}
+
+.banner-default .text-wrap {
+    font-weight: 700;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    line-height: 1.2;
+    display: inline;
+}
+
+.header-bar {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #fff;
+    background-color: #222;
+    width: 100%;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.header-bar .h-info {
+    float: left;
+    padding-left: 15px
+}
+
+.header-bar .h-contact {
+    float: right;
+    padding-right: 32px;
+}
+
+.header-bar a {
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-wrapper {
+    color: #000;
+    background-color: #fff;
+    max-width: 100%;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #25227e;
+    border-width: 0 0 2px;
+}
+
+.navbar-wrapper .navbar-img {
+    max-height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+}
+
+.navbar-wrapper .navbar-menu {
+    background-color: #fff;
+    color: #000;
+    float: right;
+
+}
+
+.navbar-menu li {
+    display: block;
+    color: #3e3e3e;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.navbar-menu li a:hover {
+    background-color: #25227e;
+    color: #fff
+}
+
+.navbar-menu ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-menu li.active {
+    color: #fff;
+    background: #25227e;
+    border: none;
+}
+
+.content-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container .section-title
+{
+
+}
+
+.content-container .section-title h2,.h2
+{
+    font-size: 26;
+    font-weight: 400;
+}
+
+.content-container .content {
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.block-section-container {
+    display: flex;
+}
+
+.split-3-container {
+    width: 370px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    /* box-sizing: border-box; */
+    vertical-align: top;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.split-3-container a {
+    color: #007bc4;
+    border-bottom: 3px solid #007bc4;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.split-3-container h3, .h3 {
+    font-size: 26px;
+}
+
+.split-3-container .split-content {
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}
+
+
+.split-3-container img,
+.img {
+    width: 100%
+}
