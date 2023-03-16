@@ -125,7 +125,7 @@ p {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF25227E", endColorstr="#FF007BC4", GradientType=1);
     width: 100%;
-    display: inline-block;
+    display: flex;
 }
 
 .banner-default .h1,
@@ -148,7 +148,13 @@ h1 {
 
 .banner-default .banner-img {
     max-height: 300px;
-    float: right;
+    margin-left: auto;
+}
+
+@media screen and (max-width:768px) {
+    .banner-default .banner-img {
+        visibility: collapse;
+    }
 }
 
 .banner-default .text-wrap {
@@ -225,7 +231,7 @@ h1 {
 
 .navbar-menu li a {
     color: #3e3e3eff;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .navbar-menu ul {
@@ -239,7 +245,7 @@ h1 {
     border: none;
 }
 
-.navbar-menu li.active a{
+.navbar-menu li.active a {
     color: #fff;
     background: #25227e;
     border: none;
@@ -252,13 +258,10 @@ h1 {
 }
 
 
-.content-container .section-title
-{
+.content-container .section-title {}
 
-}
-
-.content-container .section-title h2,.h2
-{
+.content-container .section-title h2,
+.h2 {
     font-size: 26;
     font-weight: 400;
 }
@@ -276,16 +279,17 @@ h1 {
     margin-right: auto;
 }
 
+.block-section-container {
+    display: flex;
+}
+
 @media screen and (max-width:1200px) {
     .block-section-container {
-        display: flex;
         flex-direction: column;
     }
 }
 
-.block-section-container {
-    display: flex;
-}
+
 
 .split-3-container {
     max-width: 370px;
@@ -308,7 +312,8 @@ h1 {
     text-decoration: none;
 }
 
-.split-3-container h3, .h3 {
+.split-3-container h3,
+.h3 {
     font-size: 26px;
 }
 
