@@ -276,7 +276,7 @@ h1 {
     margin-right: auto;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     .block-section-container {
         display: flex;
         flex-direction: column;
@@ -297,6 +297,8 @@ h1 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .split-3-container a {
