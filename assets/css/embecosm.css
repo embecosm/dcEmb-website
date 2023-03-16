@@ -246,7 +246,7 @@ h1 {
 }
 
 .content-container {
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -271,9 +271,16 @@ h1 {
 .content-container .content-slim {
     padding-left: 15px;
     padding-right: 15px;
-    width: 800px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width:768px) {
+    .block-section-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .block-section-container {
@@ -281,7 +288,7 @@ h1 {
 }
 
 .split-3-container {
-    width: 370px;
+    max-width: 370px;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
